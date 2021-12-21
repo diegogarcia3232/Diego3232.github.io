@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.fondo
+{
+  background-image: url("https://ak.picdn.net/shutterstock/videos/1057414678/thumb/1.jpg");
+  background-size:cover;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1000;
+  position: fixed;
+}
+
+.cabecera {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .cabecera > div {
+    width: 70px;
+    height: 40px;
+    padding: 10px;
+  }
+ 
+  .fcc-btn {
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+    padding: 15px 25px;
+    text-decoration:wavy;
+    bottom:50%;
+    top:50%;
+  }
+.foto1{
+    top:60px;
+    bottom:60px;
+
+}
+
+.menu {    
+    width: 33.33%;
+    height: 100%;
+    position: relative;
+    background-color:rgb(255, 0, 34);
+    color: white;
+    font-weight: 50;
+    float: left;
+  }
+
+/* por defecto: 
+  display: block; -> un unico elemento solido
+  position: relative -> se adapta en funcion de los demas elementos
+*/
+
+.grid-car{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  position: absolute;
+  top: 130px;
+  width: 60vw;
+  height: 130vh;
+}
+
+
+.div1 { grid-area: 1 / 1 / 2 / 2;  }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 2 / 1 / 3 / 2; }
+.div4 { grid-area: 2 / 2 / 3 / 3; }
+.div5 { grid-area: 2 / 2 / 3 / 3; }
+
+.aux{
+  background-color: whitesmoke;
+}
+
+
+
+.ficha-car{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: px;
+}
+
+.imagen { grid-area: 1 / 1 / 2 / 2; }
+.nombre { grid-area: 2 / 1 / 3 / 2; }
+.precio { grid-area: 3 / 1 / 4 / 2; }
+.info { grid-area: 4 / 1 / 5 / 2; }
+
+h1{
+  font-weight: lighter;  
+  text-align: center;
+  font-size: 25px;
+  }
+  
+  h2{
+    color: rgb(255, 0, 0);
+    font-weight: lighter; 
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  h3{
+  color: rgb(65, 64, 64);
+  font-size:16px;
+  font-weight: lighter; 
+  text-align: center;
+  }
