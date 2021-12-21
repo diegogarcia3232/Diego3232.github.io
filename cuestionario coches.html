@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+
+    <link rel="stylesheet" type="text/css" href="./cuestionario coches.css">
+</head>     
+<body>
+<div class="contact_form">
+    <div class="formulario">
+        <h1>Formulario de contacto</h1>
+        <h3>Escribenos y bucaremos el coche más apto para ti</h3>
+
+        <form action="submeter-formulario.php"method="post"></form>
+
+        <p>
+            <label for="nombre" class="colocar_nombre">Nombre
+                <span class="obligatorio">*</label></span>
+            </label>
+            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+        </p>
+        
+        <p>
+            <label for="email" class="colocar_email">Email
+                <span class="obligatorio">*</label></span>
+            </label>
+            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu email">   
+        </p>
+
+        <p>
+            <label for="telephone" class="colocar_telefono">Teléfono
+            </label>
+         <input type="tel" name="introducir_telefono" id="telefono" required="obligatorio" placeholder="Escribe tu telefono">        
+        </p>
+        <form>
+            <h3>¿Tipo de coche?</h3>
+            <label for="html">Compacto</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">Sedán</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript"></label>
+          </form>
+            <label for="fname">Deportivo</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="lname">SUV</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="lname">4x4</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <input type="submit" value="Submit">
+          </form>
+<form>
+    <h1>¿Cuántos caballos?</h1>
+  <label for="opcion1">80-90 </label><br>
+  <input type="checkbox" id="opcion1" name="opcion1" value="80-90">
+  <label for="opcion2"> 90-100</label><br>
+  <input type="checkbox" id="opcion2" name="opcion2" value="90-100">
+  <label for="opcion3"> 100-200</label>
+  <input type="checkbox" id="opcion3" name="opcion3" value="100-200">
+  <label for="opcion1">+200 </label><br>
+  <input type="checkbox" id="opcion2" name="opcion2" value="+200">
+
+</form>
+
